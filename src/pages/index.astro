@@ -1,0 +1,45 @@
+---
+// Component Imports
+import Button from "../components/Button.astro";
+import ButtonWhatsapp from "../components/ButtonWhatsapp.astro";
+import Background from "../components/Background.astro";
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<title>Astro + TailwindCSS</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+	</head>
+
+	<body class="relative overflow-hidden" style={{ background: "#FFC9D3"}}>
+		<img src="https://instagram.fbel7-1.fna.fbcdn.net/v/t51.2885-15/141874437_415035049761450_2473450739960760645_n.jpg?stp=dst-jpg_e35_p1080x1080&_nc_ht=instagram.fbel7-1.fna.fbcdn.net&_nc_cat=106&_nc_ohc=25jamnkObM8AX-j8JMq&edm=ALQROFkBAAAA&ccb=7-5&ig_cache_key=MjQ5NDE3MDQ5MDg4NTk0MDc2OA%3D%3D.2-ccb7-5&oh=00_AT-8GSOGKjtx5WeG6og1jIDl4yf4dZ7M6zu8raQuLv-dhA&oe=62F486A8&_nc_sid=30a2ef" class="w-12 h-12 rounded-full" />
+		<h1 class="text-3xl text-gray-900" style={{fontFamily: "'Dancing Script', cursive;" }}>
+			🐇 Waleshka Coelho 🐇
+		</h1>
+		<p class="text-gray-900">Estudante de Medicina e Gostosa</p>
+		<div class="grid place-items-center h-screen content-center z-50">
+			<div class="flex flex-col gap-3">
+			<div class="flex flex-row gap-0 items-center">
+				<a href="https://www.instagram.com/waleshka_coelho/" target="_blank">
+				<Button>Instagram</Button>
+				</a>
+			</div>
+			<div class="flex flex-row gap-0 items-center">
+				<a href="https://api.whatsapp.com/send?phone=5591983794476" target="_blank">
+					<ButtonWhatsapp>Whatsapp</ButtonWhatsapp>
+				</a>
+			</div>
+			</div>
+		</div>
+		<div class="absolute bottom-0 left-0" style={{zIndex: -50}}>
+			<Background />
+		</div>
+	</body>
+</html>
